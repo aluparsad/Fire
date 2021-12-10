@@ -28,7 +28,7 @@ public class AuthActivity extends BaseActivity implements Contractor.View {
     private final String TAG = "authactivity";
     private String otp;
 
-    private TextInputLayout numtil,otptil;
+    private TextInputLayout numtil, otptil;
     private EditText number_field, otp_field;
 
     private CheckBox checkBox;
