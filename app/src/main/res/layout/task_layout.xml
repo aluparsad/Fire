@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/taskCard"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:elevation="2dp"
+    android:padding="10dp"
+    app:cardBackgroundColor="@color/grey"
+    app:cardCornerRadius="15dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/taskTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2" />
+
+            <ImageView
+                android:id="@+id/taskLogo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6" />
+
+            <TextView
+                android:id="@+id/taskSubplan"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="2"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="6.5"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/taskUrl"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="1dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:paddingTop="5dp"
+                android:id="@+id/task_description"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/pay" />
+
+                <TextView
+                    android:id="@+id/taskCost"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:paddingStart="5dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/taskUploadBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:backgroundTint="@color/transparent"
+            android:contentDescription="@string/taskssupload_button"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ss" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        android:visibility="gone"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".HomeActivity.Fragments.Home.HomeFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/custom_actionbar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/adIV"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_margin="2dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingVertical="12dp"
+                    android:src="@drawable/ic_baseline_speaker_phone_24" />
+
+                <TextView
+                    android:id="@+id/announcementTv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="8"
+                    android:paddingHorizontal="2dp"
+                    android:paddingVertical="2dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/vipareaBtn"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:text="@string/app_name"
+                    android:textAllCaps="false"
+                    app:cornerRadius="5dp"
+                    app:iconGravity="end"
+                    app:iconSize="30dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/vid_tutoBnt"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    android:text="@string/app_name"
+                    android:textAllCaps="false"
+                    app:cornerRadius="5dp"
+                    app:iconGravity="end"
+                    app:iconSize="30dp" />
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="2dp"
+                app:cardCornerRadius="5dp">
+
+                <ImageButton
+                    android:id="@+id/inviteBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:scaleType="fitCenter"
+                    android:scaleX="1.1"
+                    android:scaleY="1.2"
+                    android:src="@raw/invite" />
+            </androidx.cardview.widget.CardView>
+
+            <include
+                android:id="@+id/taskHall"
+                layout="@layout/buttons_container"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_margin="1dp"
+                android:layout_marginTop="4dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="1dp"
+                android:background="@color/grey" />
+
+            <include
+                android:id="@+id/businessHall"
+                layout="@layout/buttons_container"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_margin="1dp"
+                android:layout_marginTop="4dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="1dp"
+                android:background="@color/grey" />
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                app:checkedButton="@+id/membershiplist_btn"
+                app:singleSelection="true">
+
+                <Button
+                    android:id="@+id/membershiplist_btn"
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_weight="1"
+                    android:text="Membership list" />
+
+                <Button
+                    android:id="@+id/merchantlist_btn"
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_weight="1"
+                    android:text="Merchant list" />
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_margin="1dp"
+                android:backgroundTint="@color/transparent"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="1dp"
+                app:cardUseCompatPadding="true">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_empl_data"
+                    android:padding="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

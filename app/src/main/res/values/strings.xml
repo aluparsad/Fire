@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Moneygram</string>
+    <string name="my">My</string>
+    <string name="profit">Profit</string>
+    <string name="vip">VIP</string>
+    <string name="task">Task</string>
+    <string name="home">Home</string>
+    <string name="youtube">Youtube</string>
+    <string name="instagram">Instagram</string>
+    <string name="facebook">Facebook</string>
+    <string name="line">Line</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="vipArea">VIP area</string>
+    <string name="profileBtn">User Profile</string>
+    <string name="promotionRewards">Promotion rewards</string>
+    <string name="videoTutorial">Video Tutorial</string>
+    <string name="termConditions">By clicking you accept the terms and conditions*</string>
+    <string name="enter_your_number">enter your number</string>
+    <string name="completed">completed</string>
+    <string name="name">Name</string>
+    <string name="reffer_id">Reffer Id</string>
+    <string name="login">Login?</string>
+    <string name="number">number</string>
+    <string name="otp">OTP</string>
+    <string name="title_activity_d">DActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="deposit">DEPOSIT</string>
+    <string name="withdraw">WITHDRAW</string>
+    <string name="pay">Pay:</string>
+    <string name="taskssupload_button">taskSSUpload button</string>
+    <string name="help">help</string>
+    <string name="broadcast">Congratulations to member ****5324 \nfor recommending a Manager\nand getting ther Rs 6000 Promotion Reward</string>
+
+    <string-array name="card_colors">
+        <item>#013a63</item>
+        <item>#014f86</item>
+        <item>#0077b6</item>
+        <item>#0077b6</item>
+        <item>#0096c7</item>
+    </string-array>
+</resources>

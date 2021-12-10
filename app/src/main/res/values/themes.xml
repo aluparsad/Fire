@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Fire" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!--Primary Colors for bars-->
+        <item name="colorPrimary">@color/lightpurple</item>
+        <item name="colorPrimaryVariant">@color/white2</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+
+        <item name="colorSecondary">@color/grey</item>
+        <item name="colorSecondaryVariant">@color/white2</item>
+        <item name="colorOnSecondary">@color/white2</item>
+
+        <!-- Customize your theme here. -->
+
+        <item name="android:colorBackground">@color/black</item>
+        <item name="android:textColor">@color/white2</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorOnPrimary</item>
+
+    </style>
+
+    <style name="Theme.Fire.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Fire.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Fire.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

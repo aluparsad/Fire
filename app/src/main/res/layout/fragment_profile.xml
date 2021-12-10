@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textSize="22sp" />
+
+        <include
+            layout="@layout/profile_user_details_vies"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginVertical="15dp"
+            android:layout_weight="3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"
+            android:layout_weight=".02"
+            android:background="@color/lightpurple" />
+
+        <Button
+            android:id="@+id/inviteBtn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="2dp"
+            android:layout_weight="1"
+            android:outlineAmbientShadowColor="@color/blue"
+            android:text="Invite now"
+            android:textAllCaps="false"
+            android:textColor="@color/brightblue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="2dp"
+            android:layout_weight=".5"
+            android:text="Refer and earn" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight=".02"
+            android:background="@color/lightpurple" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="Details"
+            android:textColor="@color/white2"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:layout_marginHorizontal="30dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="3"
+                    android:padding="4dp"
+                    android:text="Balance"
+                    android:textAlignment="center"
+                    android:textColor="#B7B7BA"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/balanceTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:gravity="center|end"
+                    android:text="220.51"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:layout_marginHorizontal="30dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="3"
+                    android:padding="4dp"
+                    android:text="Tasks"
+                    android:textAlignment="center"
+                    android:textColor="#B7B7BA"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tasksTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:gravity="center|end"
+                    android:text="220.51"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:layout_marginHorizontal="30dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="3"
+                    android:padding="4dp"
+                    android:text="Plan"
+                    android:textAlignment="center"
+                    android:textColor="#B7B7BA"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/subsTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:gravity="center|end"
+                    android:text="220.51"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginVertical="1dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="2dp">
+
+            <Button
+                android:id="@+id/btn_withdraw"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="2dp"
+                android:layout_weight="1"
+                android:outlineAmbientShadowColor="@color/blue"
+                android:text="Withdraw"
+                android:textAllCaps="false"
+                android:textColor="@color/brightblue" />
+
+            <Button
+                android:id="@+id/btn_deposit"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="2dp"
+                android:layout_weight="1"
+                android:outlineAmbientShadowColor="@color/blue"
+                android:text="Deposit"
+                android:textAllCaps="false"
+                android:textColor="@color/brightblue" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
