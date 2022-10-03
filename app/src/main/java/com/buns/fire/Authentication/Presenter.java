@@ -8,6 +8,7 @@ import androidx.annotation.NonNull;
 
 import com.buns.fire.Models.User;
 import com.buns.fire.Utils.Constants;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.firebase.FirebaseException;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -36,10 +37,10 @@ public class Presenter implements Contractor.Presenter {
                 .addOnSuccessListener(authResult -> {
                     Log.d(TAG, "loginWithCredentials: " + authResult.getUser());
                     userExists(Objects.requireNonNull(authResult.getUser()));
-
                 })
                 .addOnFailureListener(mView::onError);
     }
+
 
     private void userExists(FirebaseUser user) {
         FirebaseFirestore.getInstance()
@@ -93,13 +94,11 @@ public class Presenter implements Contractor.Presenter {
 
         @Override
         public void onVerificationCompleted(@NonNull PhoneAuthCredential phoneAuthCredential) {
-            Log.d(TAG, "onVerificationCompleted: " + phoneAuthCredential.getSmsCode());
             loginWithCredentials(phoneAuthCredential);
         }
 
         @Override
         public void onVerificationFailed(@NonNull FirebaseException e) {
-            Log.d(TAG, "onVerificationFailed: " + e.getMessage());
             mView.onError(e);
         }
     };

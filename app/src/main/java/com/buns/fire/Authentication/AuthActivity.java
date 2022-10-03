@@ -70,8 +70,9 @@ public class AuthActivity extends BaseActivity implements Contractor.View {
 
     private void buttonClickListeners() {
         sendOtp.setOnClickListener(v -> {
-            final String num = number_field.getText().toString().trim();
 
+            final String num = number_field.getText().toString().trim();
+            Log.d(TAG, "buttonClickListeners: " + num);
             if (!TextUtils.isEmpty(num) && num.length() == 10 && checkBox.isChecked()) {
                 presenter.loginWithPhoneNumber(this, num);
                 sendOtp.setClickable(false);

@@ -72,10 +72,11 @@ public class ProfileFragment extends Fragment implements Contractor.View {
         subscription_plan.setText(accountDetails[1]);
         final String plan = Constants.getCurrentUser().getPlan().toString();
 
-        if (TextUtils.equals(Subscription.VISITOR.toString(), plan))
-            num_tasks.setText("20");
-        else
-            num_tasks.setText("20");
+//        if (TextUtils.equals(Subscription.VISITOR.toString(), plan))
+//            num_tasks.setText("20");
+//        else
+//            num_tasks.setText("20");
+        num_tasks.setText("20");
     }
 
     private void InitializeView(@NonNull View v) {
